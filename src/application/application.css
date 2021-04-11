@@ -1,0 +1,55 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+#holder {
+	-fx-background-color: burlywood; 
+}
+
+
+/* button CSS  */
+.button {
+	-fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}
+
+.button {
+	-fx-padding: 5px;
+	-fx-border-insets: 5px;
+	
+}
+
+/* end with button */
+
+/* menu CSS */
+.MenuItem {
+	-fx-font-family: "Arial Narrow";
+	-fx-text-fill: white;
+}
+
+.Menu {
+	-fx-cell-size: 2px;
+}
+/* end with menu */
+
+#roundLabel {
+	-fx-font-family: "Comic Sans MS";
+	-fx-font-size: 14px;
+	-fx-font-weight: bold;
+}
+
+#timetxt, #turntxt {
+	-fx-font-family:  "Tahoma";
+	-fx-font-weight: bold;
+	-fx-font-size: 16px;
+}
+
+#controller {
+	-fx-background-color: linear-gradient( from 0.0% 0.0% to 100.0% 100.0%, rgb(255,255,255) 0.0, rgb(51,77,179) 100.0);  
+}

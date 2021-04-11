@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Label?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+	<top>
+		<MenuBar>
+			<Menu text="File">
+				<MenuItem text="Load" />
+				<MenuItem text="Save" />
+			</Menu>
+			<Menu text="Game">
+				<MenuItem text="new game" onAction="#start"/>
+				<MenuItem text="Pause/Go" onAction="#pause"/> 
+			</Menu>
+			<Menu text="Score">
+				<MenuItem text="Top10"/>
+			</Menu>
+		</MenuBar> 
+	</top>
+	
+	<center>
+		<BorderPane fx:id="holder">
+			<center>
+				<Canvas fx:id="canvas">
+				</Canvas> 
+			</center>
+		</BorderPane> 
+	</center>
+	
+	<right>
+		<StackPane fx:id="controller">
+		<children>
+		<VBox fx:id="vbox" alignment="BASELINE_CENTER" spacing="10" minWidth="100"> 
+			<Button fx:id="startbtn"  onMouseClicked="#start" text="Start Game" />
+			<Button fx:id="pausebtn" text="Pause" onMouseClicked="#pause"/>
+			<Button fx:id="quitbtn"  onMouseClicked="#exit"	 text="Quit"/>
+			
+			<Text fx:id="turntxt"/>
+			<Text fx:id="timetxt" text="20"/>
+			<Label fx:id="roundLabel" />
+		</VBox>
+		</children>
+		</StackPane>
+	</right>
+</BorderPane>
+
